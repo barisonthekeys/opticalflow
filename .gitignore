@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Experimental data
+data/LF/*
+data/MF/*
+data/HF/*
+
+# Experimental outputs
+runs/*
+
+# Keep directory placeholders
+!data/LF/.gitkeep
+!data/MF/.gitkeep
+!data/HF/.gitkeep
+!runs/.gitkeep
