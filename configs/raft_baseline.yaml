@@ -1,0 +1,15 @@
+experiment: EXP001_raft_baseline
+model: raft_large
+weights: C_T_SKHT_V2
+sequences: [LF, MF, HF]
+data_root: data
+run_root: runs
+cache_root: .cache/torch
+stride: 1
+num_flow_updates: 12
+device: mps
+seed: 0
+cpu_threads: 4
+# uint8 inputs use /255. Other integer depths require an explicit sensor maximum.
+intensity_max: null
+visualization_max_px: 20.0

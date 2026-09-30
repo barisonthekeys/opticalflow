@@ -1,30 +1,32 @@
-# macOS
 .DS_Store
-
-# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
 .ruff_cache/
-
-# Jupyter
 .ipynb_checkpoints/
-
-# IDE
 .vscode/
 .idea/
-
-# Experimental data
-data/LF/*
-data/MF/*
-data/HF/*
-
-# Experimental outputs
-runs/*
-
-# Keep directory placeholders
+.cache/
+data/**
+!data/LF/
+!data/MF/
+!data/HF/
 !data/LF/.gitkeep
 !data/MF/.gitkeep
 !data/HF/.gitkeep
+runs/**
 !runs/.gitkeep
+
+# Generated media, arrays, weights, and local credentials
+outputs/
+work/
+*.mp4
+*.mov
+*.avi
+*.npy
+*.npz
+*.pth
+*.pt
+.env
+.env.*
